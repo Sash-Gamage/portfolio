@@ -1,0 +1,73 @@
+body{
+  color: #123f8d;
+  
+}
+.gradient-text {
+    background: linear-gradient(45deg, #ffffff, #79bb61);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px #f1b24a;
+  }
+  
+  .skill-card {
+    background: #164a41;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .floating {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Add fade-in animation */
+  .fade-in {
+    opacity: 0;
+    transition: opacity 0.6s ease-in;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+  }
+  
+  /* Add this to the existing <style> section */
+  .progress-bar {
+    width: 100%;
+    max-width: 700px; 
+    display: 0;
+    justify-content: center; 
+    align-items: center; 
+    height: 8px;
+    background: rgba(74, 122, 97, 0.874);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #164a41, #f1b24a);
+    transition: width 1.5s ease-in-out;
+  }
+  
+  .skill-item {
+    margin-bottom: 1rem;
+  }
+
+.buttons{
+  margin: 2%;
+  
+}
